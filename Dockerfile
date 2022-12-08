@@ -1,4 +1,4 @@
 # Base from : https://github.com/jupyter/docker-stacks/blob/main/scipy-notebook/Dockerfile
-FROM jupyter/scipy-notebook:python-3.10.8
+FROM jupyter/minimal-notebook
 
-RUN conda install -c conda-forge eli5==0.13.0 
+RUN conda install -c conda-forge altair=4.2.0 -y
